@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Quiz </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			
+    </head>
+    <body>
+        </br></br></br>
+        <div align="center">
+            <img src="{{url_for('static', filename='Tutor.jpeg')}}" width="100" height="100"/>
+            <br><br>
+        </div>
+        <br><br>
+        <div class="navigation" align="center">
+            <div class="options">
+                <a href="{{ url_for('profile') }}">Profile</a>
+                <a href="{{ url_for('quiz') }}" class="active">Quiz</a>
+                <a href="{{ url_for('opportunities') }}">Job Opportunities</a>
+                <a href="{{ url_for('sign_out') }}">Logout</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="welcome" align="center">
+            <p>Hi {{session.username}}</p>
+            <p>Below is a set of quizzes you must get a total of 75% to be shortlisted for any tutor or TA position you apply to</p>
+        </div>
+        <br><br>
+        <div class="buttons">
+            <div class="personality_button" align="center">
+                <button><a href="{{ url_for('personality_quiz') }}">Personality Quiz</a></button>
+            </div>
+            <div class="knowledge_button" align="center">
+                <button><a href="{{ url_for('knowledge_quiz') }}">Knowledge Quiz</a></button>
+            </div>
+        </div>
+    </body>
+</html>

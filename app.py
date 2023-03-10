@@ -71,3 +71,15 @@ def register():
 @app.route('/profile')
 def profile():
     return render_template('profile.html')
+@app.route('/quiz')
+def quiz():
+	return render_template('quiz.html')
+@app.route('/opportunities')
+def opportunities():
+	return render_template('opportunities.html')
+@app.route('/personality_quiz')
+def personality_quiz():
+	return render_template('personality_quiz.html')
+@app.route('/knowledge_quiz')
+def knowledge_quiz():
+	return render_template('knowledge_quiz.html')

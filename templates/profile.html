@@ -14,7 +14,15 @@
                 alt="menu-icon">
             </div>
         </header>
-     
+        <br><br>
+        <div class="navigation" align="center">
+            <div class="options">
+                <a href="{{ url_for('profile') }}" class="active">Profile</a>
+                <a href="{{ url_for('quiz') }}">Quiz</a>
+                <a href="{{ url_for('opportunities') }}">Job Opportunities</a>
+                <a href="{{ url_for('sign_out') }}">Logout</a>
+            </div>
+        </div>
         <div class="main-container">
             <div class="navcontainer">
                 <nav class="nav">
@@ -22,31 +30,24 @@
                         <div class="nav-option option1">
                             <h3> Dashboard</h3>
                         </div>
-     
                         <div class="option2 nav-option">
-                            <h3>Opportunities</h3>
+                            <h3><a href="{{ url_for('opportunities') }}"></a>Opportunities</h3>
                         </div>
-     
                         <div class="nav-option option3">
-                            <h3>Test Results</h3>
+                            <h3><a href="{{ url_for('quiz') }}">Test Results</a></h3>
                         </div>
-     
                         <div class="nav-option option4">
                             <h3>Faculties</h3>
                         </div>
-     
                         <div class="nav-option option5">
                             <h3> Profile</h3>
                         </div>
-     
                         <div class="nav-option option6">
                             <h3> Settings</h3>
                         </div>
-     
                         <div class="nav-option logout">
                             <h3><a href="{{ url_for('sign_out') }}" class="btn">Logout</a></h3>
                         </div>
-     
                     </div>
                 </nav>
             </div>
@@ -56,6 +57,8 @@
                         <h1 class="recent-opportunities">Recent Opportunities</h1>
                         <button class="view">View All</button>
                     </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
