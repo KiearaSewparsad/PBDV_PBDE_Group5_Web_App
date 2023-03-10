@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title> Dashboard </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="{{url_for('static', filename='Tutor.jpeg')}}" 
+                width="100" height="100"
+                class="menu"
+                id="menu"
+                alt="menu-icon">
+            </div>
+        </header>
+     
+        <div class="main-container">
+            <div class="navcontainer">
+                <nav class="nav">
+                    <div class="nav-options">
+                        <div class="nav-option option1">
+                            <h3> Dashboard</h3>
+                        </div>
+     
+                        <div class="option2 nav-option">
+                            <h3>Opportunities</h3>
+                        </div>
+     
+                        <div class="nav-option option3">
+                            <h3>Test Results</h3>
+                        </div>
+     
+                        <div class="nav-option option4">
+                            <h3>Faculties</h3>
+                        </div>
+     
+                        <div class="nav-option option5">
+                            <h3> Profile</h3>
+                        </div>
+     
+                        <div class="nav-option option6">
+                            <h3> Settings</h3>
+                        </div>
+     
+                        <div class="nav-option logout">
+                            <h3><a href="{{ url_for('sign_out') }}" class="btn">Logout</a></h3>
+                        </div>
+     
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <div class="opportunities-container">
+                    <div class="opportunities-header">
+                        <h1 class="recent-opportunities">Recent Opportunities</h1>
+                        <button class="view">View All</button>
+                    </div>
+        </div>
+    </body>
+</html>

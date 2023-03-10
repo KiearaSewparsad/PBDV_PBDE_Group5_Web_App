@@ -1,0 +1,313 @@
+body{
+    background-color: #ffffff;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.border{
+    padding: 80px 50px;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #236B8E;
+    border-radius: 0px;
+}
+.h3{
+    color: #5b88a4;
+}
+.btn {
+    padding: 10px 40px;
+    background-color: #236B8E;
+    color: #0b0c1c;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color:#004868;
+    color: #FFFFFF;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color: #004868;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.msg{
+    color: #530d2b;
+} 
+::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word{
+    color: #020202;
+    font-style: oblique;
+    font-weight: bold;
+}
+.bottom{
+    color: #004868;
+    font-style: oblique;
+    font-weight: bold;
+}
+.bottom:hover{
+    color: #0b0c1c;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  input{
+    color:#FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    font-weight: bold;
+  }
+   
+  header {
+    height: 80px;
+    width: 100vw;
+  }
+   
+  .logo {
+    font-size: 27px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  .menu {
+    cursor: pointer;
+  }
+  .main-container {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    top: 70px;
+    z-index: 1;
+  }
+   
+  .main {
+    height: calc(100vh - 70px);
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 40px 30px 30px 30px;
+  }
+  .main::-webkit-scrollbar {
+    width: 5px;
+  }
+  .nav {
+    width: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0 20px 10px;
+  }
+  .navcontainer {
+    height: calc(100vh - 70px);
+    width: 250px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  .navclose {
+    width: 80px;
+  }
+  .nav-option {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 20px;
+    gap: 20px;
+    transition: all 0.1s ease-in-out;
+  }
+  .nav-option:active{
+    color:#530d2b;
+  }
+   
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+   
+  .option1 {
+    border-left: 5px solid #0b0c1c;
+    color: #0b0c1c;
+    cursor:pointer;
+  }
+  .option1:hover {
+    background-color: #004868;
+    border-left: 5px solid #0b0c1c;
+    color: white;
+  }
+  .opportunities-container {
+    min-height: 300px;
+    max-width: 1200px;
+    margin: 70px auto 0px auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px #c3bcc4;
+    padding: 0px 20px 20px 20px;
+  }
+  .opportunities-header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 10px 20px;
+    border-bottom: 2px solid #0b0c1c;
+  }
+   
+  .recent-Opportunities {
+    font-size: 30px;
+    font-weight: 600;
+    color: #0b0c1c
+    ;
+  }
+   
+  .view {
+    height: 35px;
+    width: 90px;
+    border-radius: 8px;
+    background-color: #004868;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .view:hover{
+    background-color: #530d2b;
+  }
+   
+  .opportunities-body {
+    max-width: 1160px;
+    overflow-x: auto;
+    padding: 20px;
+  }
+@media screen and (max-width: 950px) {
+  .nav-img {
+    height: 25px;
+  }
+  .nav-option {
+    gap: 30px;
+  }
+  .nav-option h3 {
+    font-size: 15px;
+  }
+  .opportunities-topic-heading,
+  .item1,
+  .items {
+    width: 800px;
+  }
+}
+ 
+@media screen and (max-width: 850px) {
+  .nav-img {
+    height: 30px;
+  }
+  .nav-option {
+    gap: 30px;
+  }
+  .nav-option h3 {
+    font-size: 20px;
+  }
+  .opportunities-topic-heading,
+  .item1,
+  .items {
+    width: 700px;
+  }
+  .navcontainer {
+    width: 100vw;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    top: 0;
+    left: -100vw;
+  }
+  .nav {
+    width: 100%;
+    position: absolute;
+  }
+  .navclose {
+    left: 00px;
+  }
+  .main {
+    padding: 40px 30px 30px 30px;
+  }
+}
+ 
+@media screen and (max-width: 490px) {
+  .message {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .menu {
+    height: 25px;
+  }
+  .nav-img {
+    height: 25px;
+  }
+  .nav-option {
+    gap: 25px;
+  }
+  .nav-option h3 {
+    font-size: 12px;
+  }
+  .nav-options {
+    gap: 15px;
+  }
+  .recent-Opportunities {
+    font-size: 20px;
+  }
+}
+ 
+@media screen and (max-width: 400px) {
+  .recent-Opportunities {
+    font-size: 17px;
+  }
+  .view {
+    width: 60px;
+    font-size: 10px;
+    height: 27px;
+  }
+  .opportunities-header {
+    height: 60px;
+    padding: 10px 10px 5px 10px;
+  }
+}
+ 
+@media screen and (max-width: 320px) {
+  .recent-Opportunities {
+    font-size: 12px;
+  }
+  .view {
+    width: 50px;
+    font-size: 8px;
+    height: 27px;
+  }
+  .opportunities-header {
+    height: 60px;
+    padding: 10px 5px 5px 5px;
+  }
+  .opportunities-body {
+    padding: 10px;
+  }
+}
