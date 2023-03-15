@@ -1,0 +1,64 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Results of Knowledge Quiz</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        </br>
+        <div class="logo">
+            <img src="{{url_for('static', filename='Tutor.jpeg')}}" alt="logo"/>
+        </div>
+        <br><br>
+        <div class="TopNavigation">
+            <div class="tabs">
+                <a href="{{ url_for('profile') }}">Profile</a>
+                <a href="{{ url_for('quiz') }}" class="active">Quiz</a>
+                <a href="{{ url_for('sign_out') }}">Logout</a>
+            </div>
+        </div>
+        <br>
+        <div class="title">
+            <h1>Knowledge Quiz Results</h1>
+        </div>
+        <div class="logo">
+            <img src="{{url_for('static', filename='knowledge.jpg')}}" alt="Knowledge">
+        </div>
+        <br>
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+                <h1 id="finalResult">0</h1>
+                Well done {{session.username}}
+                <button class="btn" id="saveResultBtn" type="submit" onclick="saveResult(event)" disabled>Save</button>
+                <a href="{{ url_for('profile') }}" class="btn">Dashboard</a>
+            </div>
+        </div>
+        <script>
+            const saveResultBtn = document.querySelector('#saveResultBtn');
+            const finalResult= document.querySelector('#finalResult');
+            const RecentResult = document.querySelector('#RecentResult');
+
+
+            const highResult = JSON.parse(localStorage.getItem('highResult')) || [];
+
+            const max_highResult = 12;
+
+            finalResult.innerText = RecentResult;
+
+            saveHighResult = e => {
+                e.preventDefault();
+
+                const result = {
+                    result: RecentResult,
+                }
+
+                highResult.push(result);
+
+                highResult.splice(12);
+
+                localStorage.setItem('highResult', JSON.stringify(highResult));
+                window.location.assign("{{ url_for('highKResults') }}");
+            }
+        </script>
+    </body>
+</html>
