@@ -12,139 +12,107 @@
   width: 100px;
   height: 100px;
 }
-.welcome{
-  margin: auto;
-  display: block;
-  display: flex;
-  justify-content: center;
+.welcome h1{
+  text-align: center;
+  font-size: 30px;
+  color: #4c62a1;
+  font-weight: bolder;
 }
-h1{
-  font-size: 26px;
-  color: black;
-}
-.header {
-  align-items: center;
-  font-size: 18px;
+.header h2{
+  text-align: center;
+  font-size: 20px;
 }
 .msg{
-  color: #cd141a;
   text-align: center;
+  font-size: 15px;
+  color: #cd141a;
+  font-weight: bolder;
+}
+.btn:hover{
+  background-color: #83206d;
+  color: white;
+}
+.text-center{
+  text-align: center;
+}
+.bottomLink:hover{
+  color: #4c62a1;
+}
+::placeholder{
+  text-align: center;
+  font-size: 10px;
+  color: black;
 }
 input{
   text-align: center;
-  font-size:15px;
-}
-.bottom{
-  text-align: center;
-  font-size: 14px;
-}
-.bottom .bottomLink:hover{
-  color:#4c62a1;
-}
-.btn:hover{
-  color: white;
-  background-color: #83206d;
-}
-::placeholder{
-  font-size: 10px;
+  font-size: 12px;
   color: black;
+}
+.header .word{
+  text-align: center;
+  font-size: 30px;
+  color: #4c62a1;
+  font-weight: bolder;
+}
+.active{
+  color: white;
+  background-color: #4c62a1;
 }
 .TopNavigation{
   text-align: center;
 }
-.tabs a:hover{
-  color: white;
-  background-color: #83206d;
-}
-.sideNavContainer{
-  margin-top: 30px;
-}
-.sideNavContainer .sideNavTabs a{
-  display: block;
-  padding: 10px;
-}
-.information p{
-  display: block;
+.TopNavigation .tabs a:hover{
   background-color: #177f36;
   color: white;
 }
-.information{
-  padding: 10px;
-  margin-left: 40%;
-  margin-top: -118px;
-  background-color: #83206d;
+.sideNavTabs a{
+  display: block;
+  align-content: center;
+  margin-right: 60%;
 }
-.active{
+.sideNavTabs a:hover{
+  background-color: #177f36;
+  color: white;
+}
+.info{
+  margin-left: 45%;
+  margin-top: -160px;
+}
+.info h3{
   background-color: #4c62a1;
   color: white;
 }
-.types-of-quizzes {
-  text-align: center;
-}
-.types-of-quizzes button img{
-  width: 150px;
-  height: 100px
-}
-.types-of-quizzes button a:hover{
-  color: white;
-  background-color: #83206d;
-}
-.title h1{
-  font-size: 20px;
-  text-align: center;
-  color: #177f36;
-}
-#display {
+.form{
   display: flex;
-  justify-content: space-evenly;
+  justify-content:center;
+  border: 1px solid black;
 }
-.display-prefix{
+.forms{
   text-align: center;
-}
-.choice-container{
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  background-color: #4c62a1;
-  color: white;
-}
-.choiceText{
-  display: inline-block;
-  background-color: #4c62a1;
-  color: white;
-}
-.choice-prefix{
-  display: inline-block;
-  background-color: #4c62a1;
-  color: white;
-}
-.choice-container:hover{
-  cursor: pointer;
-  transform: scale(1.06);
-  transform: transform 100ms;
-}
-#question{
-  text-align: center;
-}
-#progressBar{
-  width: 100px;
-  height: 10px;
-  border: 2px solid #177f36;
-  overflow: hidden;
-}
-#progressBarFull{
-  height: 100%;
-  background-color: #177f36;
-  width: 0%;
-}
-.finalResult{
-  text-align: center;
-}
-.notification {
-  background-color: #f2f2f2;
-  padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 .forms h1{
+  background-color: #4c62a1;
+  color: white;
+}
+h1{
   text-align: center;
+}
+p{
+  text-align: center;
+}
+button:hover{
+  background-color: #83206d;
+  color: white;
+}
+button a:hover{
+  background-color: #83206d;
+  color: white;
+}
+.bt{
+  border: 1px solid black;
+}
+.bt:hover{
+  background-color: #83206d;
+  color: white;
 }

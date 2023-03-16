@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title> TA Opportunities </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        </br>
+        <div class="logo">
+            <img src="{{url_for('static', filename='Tutor.jpeg')}}" alt="logo"/>
+        </div>
+        <br><br>
+        <div class="TopNavigation">
+            <div class="tabs">
+                <a href="{{ url_for('profile') }}">Profile</a>
+                <a href="{{ url_for('jobs') }}" class="activate">Opportunities</a>
+                <a href="{{ url_for('sign_out') }}">Logout</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="opp" style="margin: auto;">
+            <div>
+                {% for jobs in info %}
+                <div>
+                    <h3>Title: {{jobs['title']}}</h3>
+                    <h4>Faculty: {{jobs['faculty']}}</h4>
+                    <h5>Department: {{jobs['department']}}</h5>
+                </div>
+                <div style="border-bottom: 2px solid black;">
+                    <a href="{{ url_for('recieved') }}" class="bt">Apply</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

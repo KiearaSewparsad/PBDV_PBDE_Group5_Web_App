@@ -13,40 +13,38 @@
         <div class="TopNavigation">
             <div class="tabs">
                 <a href="{{ url_for('profile') }}" class="active">Profile</a>
-                <a href="{{ url_for('quiz') }}">Quiz</a>
+                <a href="{{ url_for('jobs') }}">Opportunities</a>
                 <a href="{{ url_for('sign_out') }}">Logout</a>
             </div>
         </div>
+        <br><br>
         <div class="sideNavContainer">
             <div class="sideNavTabs">
-                <a href="{{ url_for('profile') }}">Dashboard</a>
-                <a href="{{ url_for('highPResults') }}">Personality Test Results</a>
-                <a href="{{ url_for('highKResults') }}">Knowledge Test Results</a>
-                <a href="{{ url_for('studentinfo') }}" class="active">Fill in details and document submission</a>
-                <a href="{{ url_for('email') }}">Complaints/Queries</a>
-                <a href="{{ url_for('notification') }}">Notifications</a>
+                <a href="{{ url_for('profile') }}">Dashboard</a><br>
+                <a href="{{ url_for('studentinfo') }}" class="active">Fill in details and document submission</a><br>
+                <a href="{{ url_for('email') }}">Complaints/Queries</a><br>
             </div>
         </div>
         <div class="forms">
             <h1>Please fill out the necessary information</h1>
             <div class="form">
-                <form action="{{ url_for('studentinfo') }}" method="post" enctype="multipart/form-data" align="center">
+                <form action="mailto:tutorhive9@gmail.com" method="post" enctype="text/plain">
                     <div class="msg">{{ msg }}</div>
                     <br>
-                    <input id="name" name="name" type="text" placeholder="Enter Your Name"/></br>
-                    <input id="surname" name="surname" type="text" placeholder="Enter Your Surname"/></br>
-                    <input id="snumber" name="snumber" type="text" placeholder="Enter Your Student Number"/></br>
-                    <input id="phone" name="phone" type="text" placeholder="Enter Your Cellphone number"/></br>
-                    <input id="email" name="email" type="email" placeholder="Enter Your Email Address"/></br>
+                    <input id="name" name="name" type="text" placeholder="Enter Your Name"/></br></br>
+                    <input id="surname" name="surname" type="text" placeholder="Enter Your Surname"/></br></br>
+                    <input id="snumber" name="snumber" type="text" placeholder="Enter Your Student Number"/></br></br>
+                    <input id="phone" name="phone" type="text" placeholder="Enter Your Cellphone number"/></br></br>
+                    <input id="email" name="email" type="email" placeholder="Enter Your Email Address"/></br></br>
                     <label for="gender" size="1">What is your gender?</label></br>
                         <select id="gender" name="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="prefer-not-to-say">Prefer not to say</option>
-                        </select></br>
+                        </select></br></br>
                     <label for="birthday">Birthday:</label></br>
-                    <input type="date" id="birthday" name="birthday"></br>
-                    <input id="ID" name="ID" type="text" placeholder="Enter Your ID number"/></br>
+                    <input type="date" id="birthday" name="birthday"></br></br>
+                    <input id="ID" name="ID" type="text" placeholder="Enter Your ID number"/></br></br>
                     <label for="race" size="1">What is your race?</label></br>
                         <select id="race" name="race"></br>
                         <option value="White">White</option>
@@ -54,17 +52,17 @@
                         <option value="Indian">Indian</option>
                         <option value="Asian">Asian</option>
                         <option value="Coloured">Coloured</option>
-                        </select></br>
+                        </select></br></br>
                     <label for="POR">Proof of Registration</label></br>
-                    <input type = "file" name = "Prooffile" /></br>
+                    <input type = "file" name = "Prooffile" /></br></br>
                     <label for="AR">Academic Record</label></br>
-                    <input type = "file" name = "Recordfile" /></br>
+                    <input type = "file" name = "Recordfile" /></br></br>
                     <label for="ID">Identity Document</label></br>
-                    <input type = "file" name = "IDfile" /></br>
+                    <input type = "file" name = "IDfile" /></br></br>
                     <label for="CV">CV</label></br>
-                    <input type = "file" name = "CVfile" /></br>
+                    <input type = "file" name = "CVfile" /></br></br>
                     <label for="other">Other documents</label></br>
-                    <input type = "file" name = "Otherfile" /></br>
+                    <input type = "file" name = "Otherfile" /></br></br>
                     <input type="submit" class="btn" value="Submit"></br></br>
                 </form>
             </div>

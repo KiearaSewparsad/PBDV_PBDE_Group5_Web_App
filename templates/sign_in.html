@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Sign in </title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 	</head>
 	<body>
         </br></br>
@@ -14,7 +14,7 @@
 		</div>
 		<br/>
 		<div class="header">
-			<h2 class="word" align="center">Sign into your account</h2>
+			<h2>Sign into your account</h2>
 		</div>
 		</br>
 		<h2 class="word">
@@ -26,6 +26,9 @@
 				<input type="submit" class="btn" value="Sign In"></br></br>
 			</form>
 		</h2>
-		<p class="bottom">Need an account? <a class="bottomLink" href="{{url_for('register')}}">Create one here</a></p>
+		<div class="text-center">
+			Need an account? 
+			<a class="bottomLink" href="{{url_for('register')}}">Create one here</a>
+		</div>
 	</body>
 </html>

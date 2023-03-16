@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-		<title> Dashboard </title>
+		<title> Dashboard - Email </title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
@@ -20,17 +20,24 @@
         <br><br>
         <div class="sideNavContainer">
             <div class="sideNavTabs">
-                <a href="{{ url_for('profile') }}" class="active">Dashboard</a><br>
+                <a href="{{ url_for('profile') }}">Dashboard</a><br>
                 <a href="{{ url_for('studentinfo') }}">Fill in details and document submission</a><br>
-                <a href="{{ url_for('email') }}">Complaints/Queries</a><br>
+                <a href="{{ url_for('email') }}" class="active">Complaints/Queries</a><br>
             </div>
         </div>
         <br>
-        <div class="info">
-            <h3>
-                Name: {{session.username}}<br>
-                University: Durban University of Technology
-            </h3>
+        <div class="forms" align="center">
+            <h1>Please fill out the form if you have any queries or complaints</h1>
+            <form action="mailto:tutorhive9@gmail.com" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" name="name"><br>
+                E-mail:<br>
+                <input type="email" name="mail"><br>
+                Comment/Complaint<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input type="submit" value="Send" class="btn">
+                <input type="reset" value="Reset">
+            </form>                
         </div>
     </body>
 </html>
