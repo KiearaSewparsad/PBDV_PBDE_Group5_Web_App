@@ -3,7 +3,5 @@ Functions of Web Application:
   Sign-in
   Sign-out
   Job Opportunity Display
-  Quiz
   Form fill
   Email
-  Push notifications
